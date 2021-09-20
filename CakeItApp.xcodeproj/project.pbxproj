@@ -23,6 +23,8 @@
 		04789C4C26F8886300616CD7 /* MockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04789C4B26F8886300616CD7 /* MockService.swift */; };
 		04789C4E26F8888D00616CD7 /* CakeViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04789C4D26F8888D00616CD7 /* CakeViewModelTest.swift */; };
 		04789C5126F88B1E00616CD7 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04789C5026F88B1E00616CD7 /* MainCoordinator.swift */; };
+		04789C5326F88CAA00616CD7 /* CakeDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04789C5226F88CAA00616CD7 /* CakeDetailsViewModel.swift */; };
+		04789C5726F88D9D00616CD7 /* CakeDetailsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04789C5626F88D9D00616CD7 /* CakeDetailsViewModelTests.swift */; };
 		CEF2DA7325B9B99D00DCAA34 /* CakeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF2DA7225B9B99D00DCAA34 /* CakeTableViewCell.swift */; };
 		CEF6389B25B73FA7009F967A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF6389A25B73FA7009F967A /* AppDelegate.swift */; };
 		CEF6389D25B73FA7009F967A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF6389C25B73FA7009F967A /* SceneDelegate.swift */; };
@@ -69,6 +71,8 @@
 		04789C4B26F8886300616CD7 /* MockService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockService.swift; sourceTree = "<group>"; };
 		04789C4D26F8888D00616CD7 /* CakeViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CakeViewModelTest.swift; sourceTree = "<group>"; };
 		04789C5026F88B1E00616CD7 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		04789C5226F88CAA00616CD7 /* CakeDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CakeDetailsViewModel.swift; sourceTree = "<group>"; };
+		04789C5626F88D9D00616CD7 /* CakeDetailsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CakeDetailsViewModelTests.swift; sourceTree = "<group>"; };
 		CEF2DA7225B9B99D00DCAA34 /* CakeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CakeTableViewCell.swift; sourceTree = "<group>"; };
 		CEF6389725B73FA7009F967A /* CakeItApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CakeItApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEF6389A25B73FA7009F967A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -151,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				04789C4526F8873A00616CD7 /* CakeListViewModel.swift */,
+				04789C5226F88CAA00616CD7 /* CakeDetailsViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -217,6 +222,7 @@
 				04789C4926F8880200616CD7 /* CakeFailureResponse.json */,
 				04789C4B26F8886300616CD7 /* MockService.swift */,
 				04789C4D26F8888D00616CD7 /* CakeViewModelTest.swift */,
+				04789C5626F88D9D00616CD7 /* CakeDetailsViewModelTests.swift */,
 			);
 			path = CakeItAppTests;
 			sourceTree = "<group>";
@@ -369,6 +375,7 @@
 				04789C2E26F8842C00616CD7 /* JsonDecodable.swift in Sources */,
 				CEF6389B25B73FA7009F967A /* AppDelegate.swift in Sources */,
 				04789C3626F884EB00616CD7 /* ImageCache.swift in Sources */,
+				04789C5326F88CAA00616CD7 /* CakeDetailsViewModel.swift in Sources */,
 				04789C5126F88B1E00616CD7 /* MainCoordinator.swift in Sources */,
 				04789C3F26F8857800616CD7 /* Constants.swift in Sources */,
 				CEF638DC25B99C2C009F967A /* Cake.swift in Sources */,
@@ -388,6 +395,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04789C4E26F8888D00616CD7 /* CakeViewModelTest.swift in Sources */,
+				04789C5726F88D9D00616CD7 /* CakeDetailsViewModelTests.swift in Sources */,
 				04789C4C26F8886300616CD7 /* MockService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
