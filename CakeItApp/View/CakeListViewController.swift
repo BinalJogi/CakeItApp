@@ -16,8 +16,9 @@ class CakeListViewController: UIViewController {
     
     @IBOutlet var tableView: UITableView!
     
-    var viewModel:CakeListViewModelType!  // ViewModel
-    
+    var viewModel:CakeListViewModelType!
+    weak var coordinator: Coordinator?
+
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
