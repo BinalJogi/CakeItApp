@@ -7,6 +7,11 @@
 
 import UIKit
 
+protocol CakeListViewType:AnyObject {
+    func updateUI()
+    func showError()
+}
+
 class CakeListViewController: UIViewController {
     
     @IBOutlet var tableView: UITableView!
@@ -70,3 +75,12 @@ extension CakeListViewController: UITableViewDataSource {
     }
 }
 
+extension CakeListViewController: CakeListViewType {
+    func updateUI() {
+        
+    }
+    
+    func showError() {
+        
+    }
+}

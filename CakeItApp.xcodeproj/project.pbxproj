@@ -17,13 +17,17 @@
 		04789C3A26F8852600616CD7 /* EndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04789C3926F8852600616CD7 /* EndPoints.swift */; };
 		04789C3C26F8854600616CD7 /* URLRequest+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04789C3B26F8854600616CD7 /* URLRequest+Extension.swift */; };
 		04789C3F26F8857800616CD7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04789C3E26F8857800616CD7 /* Constants.swift */; };
+		04789C4626F8873A00616CD7 /* CakeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04789C4526F8873A00616CD7 /* CakeListViewModel.swift */; };
+		04789C4826F887D100616CD7 /* CakeSuccessResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 04789C4726F887D100616CD7 /* CakeSuccessResponse.json */; };
+		04789C4A26F8880200616CD7 /* CakeFailureResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 04789C4926F8880200616CD7 /* CakeFailureResponse.json */; };
+		04789C4C26F8886300616CD7 /* MockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04789C4B26F8886300616CD7 /* MockService.swift */; };
+		04789C4E26F8888D00616CD7 /* CakeViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04789C4D26F8888D00616CD7 /* CakeViewModelTest.swift */; };
 		CEF2DA7325B9B99D00DCAA34 /* CakeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF2DA7225B9B99D00DCAA34 /* CakeTableViewCell.swift */; };
 		CEF6389B25B73FA7009F967A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF6389A25B73FA7009F967A /* AppDelegate.swift */; };
 		CEF6389D25B73FA7009F967A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF6389C25B73FA7009F967A /* SceneDelegate.swift */; };
 		CEF638A225B73FA7009F967A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF638A025B73FA7009F967A /* Main.storyboard */; };
 		CEF638A425B73FA8009F967A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEF638A325B73FA8009F967A /* Assets.xcassets */; };
 		CEF638A725B73FA8009F967A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF638A525B73FA8009F967A /* LaunchScreen.storyboard */; };
-		CEF638B225B73FA8009F967A /* CakeItAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF638B125B73FA8009F967A /* CakeItAppTests.swift */; };
 		CEF638BD25B73FA8009F967A /* CakeItAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF638BC25B73FA8009F967A /* CakeItAppUITests.swift */; };
 		CEF638D225B88C65009F967A /* CakeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF638D125B88C65009F967A /* CakeListViewController.swift */; };
 		CEF638D725B998C8009F967A /* CakeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF638D625B998C8009F967A /* CakeDetailViewController.swift */; };
@@ -58,6 +62,11 @@
 		04789C3926F8852600616CD7 /* EndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoints.swift; sourceTree = "<group>"; };
 		04789C3B26F8854600616CD7 /* URLRequest+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+Extension.swift"; sourceTree = "<group>"; };
 		04789C3E26F8857800616CD7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		04789C4526F8873A00616CD7 /* CakeListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CakeListViewModel.swift; sourceTree = "<group>"; };
+		04789C4726F887D100616CD7 /* CakeSuccessResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CakeSuccessResponse.json; sourceTree = "<group>"; };
+		04789C4926F8880200616CD7 /* CakeFailureResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CakeFailureResponse.json; sourceTree = "<group>"; };
+		04789C4B26F8886300616CD7 /* MockService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockService.swift; sourceTree = "<group>"; };
+		04789C4D26F8888D00616CD7 /* CakeViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CakeViewModelTest.swift; sourceTree = "<group>"; };
 		CEF2DA7225B9B99D00DCAA34 /* CakeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CakeTableViewCell.swift; sourceTree = "<group>"; };
 		CEF6389725B73FA7009F967A /* CakeItApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CakeItApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEF6389A25B73FA7009F967A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -67,7 +76,6 @@
 		CEF638A625B73FA8009F967A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEF638A825B73FA8009F967A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEF638AD25B73FA8009F967A /* CakeItAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CakeItAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CEF638B125B73FA8009F967A /* CakeItAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CakeItAppTests.swift; sourceTree = "<group>"; };
 		CEF638B325B73FA8009F967A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEF638B825B73FA8009F967A /* CakeItAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CakeItAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEF638BC25B73FA8009F967A /* CakeItAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CakeItAppUITests.swift; sourceTree = "<group>"; };
@@ -140,6 +148,7 @@
 		04789C4126F8861700616CD7 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				04789C4526F8873A00616CD7 /* CakeListViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -192,8 +201,11 @@
 		CEF638B025B73FA8009F967A /* CakeItAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				CEF638B125B73FA8009F967A /* CakeItAppTests.swift */,
 				CEF638B325B73FA8009F967A /* Info.plist */,
+				04789C4726F887D100616CD7 /* CakeSuccessResponse.json */,
+				04789C4926F8880200616CD7 /* CakeFailureResponse.json */,
+				04789C4B26F8886300616CD7 /* MockService.swift */,
+				04789C4D26F8888D00616CD7 /* CakeViewModelTest.swift */,
 			);
 			path = CakeItAppTests;
 			sourceTree = "<group>";
@@ -320,6 +332,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04789C4826F887D100616CD7 /* CakeSuccessResponse.json in Resources */,
+				04789C4A26F8880200616CD7 /* CakeFailureResponse.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,6 +367,7 @@
 				CEF638D725B998C8009F967A /* CakeDetailViewController.swift in Sources */,
 				04789C3226F8849100616CD7 /* ServiceImpl.swift in Sources */,
 				04789C3826F8850F00616CD7 /* ImageLoader.swift in Sources */,
+				04789C4626F8873A00616CD7 /* CakeListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,7 +375,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEF638B225B73FA8009F967A /* CakeItAppTests.swift in Sources */,
+				04789C4E26F8888D00616CD7 /* CakeViewModelTest.swift in Sources */,
+				04789C4C26F8886300616CD7 /* MockService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
