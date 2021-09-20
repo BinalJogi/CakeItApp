@@ -126,6 +126,32 @@
 			path = Utility;
 			sourceTree = "<group>";
 		};
+		04789C4026F8861300616CD7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CEF638A025B73FA7009F967A /* Main.storyboard */,
+				CEF2DA7225B9B99D00DCAA34 /* CakeTableViewCell.swift */,
+				CEF638D625B998C8009F967A /* CakeDetailViewController.swift */,
+				CEF638D125B88C65009F967A /* CakeListViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		04789C4126F8861700616CD7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		04789C4226F8861E00616CD7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CEF638DB25B99C2C009F967A /* Cake.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		CEF6388E25B73FA7009F967A = {
 			isa = PBXGroup;
 			children = (
@@ -149,15 +175,13 @@
 		CEF6389925B73FA7009F967A /* CakeItApp */ = {
 			isa = PBXGroup;
 			children = (
+				04789C4226F8861E00616CD7 /* Model */,
+				04789C4126F8861700616CD7 /* ViewModel */,
+				04789C4026F8861300616CD7 /* View */,
 				04789C3D26F8856B00616CD7 /* Utility */,
 				04789C2A26F883DF00616CD7 /* Networking */,
 				CEF6389A25B73FA7009F967A /* AppDelegate.swift */,
-				CEF638D625B998C8009F967A /* CakeDetailViewController.swift */,
-				CEF2DA7225B9B99D00DCAA34 /* CakeTableViewCell.swift */,
-				CEF638D125B88C65009F967A /* CakeListViewController.swift */,
 				CEF6389C25B73FA7009F967A /* SceneDelegate.swift */,
-				CEF638DB25B99C2C009F967A /* Cake.swift */,
-				CEF638A025B73FA7009F967A /* Main.storyboard */,
 				CEF638A325B73FA8009F967A /* Assets.xcassets */,
 				CEF638A525B73FA8009F967A /* LaunchScreen.storyboard */,
 				CEF638A825B73FA8009F967A /* Info.plist */,
