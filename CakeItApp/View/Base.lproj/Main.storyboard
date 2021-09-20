@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Zxb-3X-vdd">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,7 +11,7 @@
         <!--Cake List View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="CakeListViewController" customModule="CakeItApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CakeListViewController" id="BYZ-38-t0r" customClass="CakeListViewController" customModule="CakeItApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -22,7 +22,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="102" id="Urq-R9-JPG" customClass="CakeTableViewCell" customModule="CakeItApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="102"/>
+                                        <rect key="frame" x="0.0" y="24.333333969116211" width="414" height="102"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Urq-R9-JPG" id="z7g-oF-eg8">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="102"/>
@@ -63,7 +63,6 @@
                     <navigationItem key="navigationItem" id="2Sj-QC-2ah"/>
                     <connections>
                         <outlet property="tableView" destination="feW-cE-PbN" id="0cL-Of-xAj"/>
-                        <segue destination="DYd-WC-H7w" kind="show" identifier="segue" id="8wc-SG-cgt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -73,13 +72,13 @@
         <!--Cake Detail View Controller-->
         <scene sceneID="DeM-dd-MJx">
             <objects>
-                <viewController id="DYd-WC-H7w" customClass="CakeDetailViewController" customModule="CakeItApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CakeDetailViewController" id="DYd-WC-H7w" customClass="CakeDetailViewController" customModule="CakeItApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Xbg-t7-XNL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iKW-KK-r33">
-                                <rect key="frame" x="20" y="138" width="374" height="200"/>
+                                <rect key="frame" x="20" y="94" width="374" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="374" id="Fi5-qW-o3R"/>
                                     <constraint firstAttribute="height" constant="200" id="HyV-VC-j9K"/>
@@ -92,16 +91,16 @@
                                 </variation>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="k5i-iQ-TzT">
-                                <rect key="frame" x="20" y="346" width="374" height="57.666666666666686"/>
+                                <rect key="frame" x="20" y="302" width="374" height="50.333333333333314"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lXg-xj-hNV">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="33.666666666666664"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="30"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5id-GX-5qJ">
-                                        <rect key="frame" x="0.0" y="33.666666666666686" width="374" height="24"/>
+                                        <rect key="frame" x="0.0" y="30" width="374" height="20.333333333333329"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -130,24 +129,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dqr-Zi-chC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1784" y="100"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="4n1-7R-OCq">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Zxb-3X-vdd" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="uGz-e8-K4h">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="civ-iQ-Iqu"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="EJs-b0-i5e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="47.826086956521742" y="93.75"/>
         </scene>
     </scenes>
     <resources>
